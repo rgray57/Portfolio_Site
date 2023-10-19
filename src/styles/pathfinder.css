@@ -1,0 +1,81 @@
+.pathfinder {
+  min-height: calc(100vh - var(--header-height));
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--grey-1);
+  box-shadow: 0px -15px 30px -20px rgba(0, 0, 0, 0.6) inset,
+    0px 15px 30px -20px rgba(0, 0, 0, 0.6) inset;
+}
+
+.control-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: var(--white-1);
+}
+
+.control-bar-cursor-btns button {
+    padding: 0.1rem;
+}
+
+.btn-icon{
+    display: inline-block;
+}
+
+.grid-section {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Grid styling*/
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column {
+    margin: 0;
+    padding: 0;
+}
+
+/*Squares styling*/
+.square{
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 1/1;
+    width: 15px;
+    background-color: var(--white-2);
+    border: 1px solid var(--grey-3);
+    display: block;
+}
+
+.visited-square{
+    background-color: var(--secondary-2);
+}
+
+.shortest-path-square{
+    background-color: var(--tertiary);
+}
+
+.goal-square {
+     background-color: #f5e72a;
+}
+
+.start-square {
+    background-color: #7bf52a;
+}
+
+.block-square{
+    background-color: var(--grey-3);
+    border: solid 1px var(--black-2);
+}
+

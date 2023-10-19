@@ -1,0 +1,21 @@
+---
+
+---
+
+<div class="nav-links">
+  <a href="/">About</a>
+  <span></span>
+  <a href="/weatherApp">Weather</a>
+  <span></span>
+  <a href="/pathfinder">Pathfinder Sandbox</a>
+</div>
+
+<script>
+  const path = "/" + window.location.href.split("/")[3];
+  const links = document.querySelectorAll(".nav-links a");
+  links.forEach((link) => {
+    if (path === link.getAttribute("href")) {
+      link.classList.add("active");
+    }
+  });
+</script>

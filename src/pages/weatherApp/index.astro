@@ -1,0 +1,9 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import WeatherSearch from "../../components/WeatherSearch.jsx";
+const pageTitle = "Weather";
+---
+
+<BaseLayout title={pageTitle}>
+  <WeatherSearch client:only="preact"/>
+</BaseLayout>

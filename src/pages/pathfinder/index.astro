@@ -1,0 +1,10 @@
+---
+import PathfindingSandbox from "../../components/PathfindingSandbox";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Pathfinder Sandbox";
+---
+
+<BaseLayout title={pageTitle}>
+  <PathfindingSandbox client:only="preact"/>
+</BaseLayout>
